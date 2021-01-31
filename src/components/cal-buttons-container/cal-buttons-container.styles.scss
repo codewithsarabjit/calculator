@@ -1,0 +1,8 @@
+.buttons-container {
+    min-height: 350px;
+    background-color: whitesmoke;
+
+    & .buttons-wrap{
+        width: 100%;
+    }
+}
