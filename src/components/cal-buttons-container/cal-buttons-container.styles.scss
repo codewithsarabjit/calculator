@@ -1,8 +1,9 @@
 .buttons-container {
-    min-height: 350px;
-    background-color: whitesmoke;
+  min-height: 350px;
 
-    & .buttons-wrap{
-        width: 100%;
-    }
+  & .buttons-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

@@ -1,6 +1,17 @@
 .cal-container {
-    border: 1px solid #000;
-    width: 40vw;
-    margin: 0 auto;
-    margin-top: 30px;
+  border: 1px solid #000;
+  width: 40vw;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #000;
+
+  h2 {
+    color: antiquewhite;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cal-container {
+    width: 90vw;
+  }
 }

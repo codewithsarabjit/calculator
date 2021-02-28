@@ -1,13 +1,29 @@
-import React from 'react';
+import React from "react";
 
-import './cal-display.styles.scss';
+import "./cal-display.styles.scss";
 
-const CalDisplay = () => {
-    return (
-        <div className="display">
-            Display screen
-        </div>
-    )
-}
+import { connect } from "react-redux";
 
-export default CalDisplay;
+const CalDisplay = (props) => {
+  return (
+    <div className="display">
+      <span className="previousValue">
+        {props.previousValue !== "" ? props.previousValue : ""}
+      </span>
+      <span className="formula">
+        {props.formula !== "" ? props.formula : ""}
+      </span>
+      <span className="displayValue">{props.displayValue}</span>
+    </div>
+  );
+};
+
+const mapStateToProps = (state) => {
+  return {
+    displayValue: state.calculator.displayValue,
+    previousValue: state.calculator.elementOne,
+    formula: state.calculator.formula,
+  };
+};
+
+export default connect(mapStateToProps, null)(CalDisplay);
