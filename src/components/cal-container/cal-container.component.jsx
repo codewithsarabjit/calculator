@@ -8,7 +8,7 @@ import CalButtonsContainer from "../cal-buttons-container/cal-buttons-container.
 const CalContainer = () => {
   return (
     <div className="cal-container">
-      <h2>Cal container</h2>
+      <h2>CALCULATOR</h2>
       <CalDisplay />
       <CalButtonsContainer />
     </div>

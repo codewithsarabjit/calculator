@@ -91,7 +91,7 @@ const reducer = (state = INITIAL_STATE, action) => {
       };
 
     case CalculatorTypes.BACK_SPACE:
-      var newValue = state.displayValue.slice(0, -1);
+      var newValue = (state.displayValue.length > 0) ? state.displayValue.slice(0, -1) : "";
       return {
         ...state,
         displayValue: newValue !== "" ? newValue : "0",

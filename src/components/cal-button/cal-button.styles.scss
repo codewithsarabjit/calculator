@@ -3,4 +3,23 @@
   flex: 1 0 21%;
   background-color: whitesmoke;
   margin: 1px;
+
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 1px #999;
+
+  &:hover {
+    background-color: lightgray;
+    color: white;
+  }
+
+  &:active {
+    background-color: lightgray;
+    box-shadow: 0 5px #lightgray;
+    transform: translateY(4px);
+  }
 }
